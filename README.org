@@ -1,0 +1,42 @@
+* ~~!!!Warning!!!~~
+This project is in very initial stage.
+
+* Introduce
+"CharniakChineseParser" is a Charniak parser for Chinese. 
+It is used for study purpose only.
+
+* Requirements
+** ~~NONE~~ 
+
+* Usage
+See mytest.sh
+
+only English now, output example:
+
+I can't love you.
+[file]---
+(S1 (S (NP (PRP I)) (VP (MD can) (RB n't) (VP (VB love) (NP (PRP you)))) (. .)))
+[pipe]---
+(S1 (S (NP (PRP I)) (VP (MD ca) (RB n't) (VP (VB love) (NP (PRP you)))) (. .)))
+
+
+* Develope
+
+** Charniak Parser 
+It is famous and fantastic English parser developed by Eugene Charniak. (with Mark Johnson?).
+
+The reason use Charniak Parser as a base to develop Chinese :
+  + It's speedy! 10 times faster than some slow parsers.
+  + It doesn't use seperate "POS tagger" (no difference with Rule parser)
+  + It's lexicalized. make it accurate.
+  ＋ Code quality is rather high. (I have heavy comments for most code)
+
+** Difficulties
+  + Lack of document. Especially about detail of features.
+  + Features selection and model generation for Chinese。
+ 
+
+** Version?
+There are several versions of Charniak Parser. This one is a relative old one (without ReRank)
+However its code size is also relatively small.
+
