@@ -15,7 +15,7 @@ only English now, output example:
 
 I can't love you.
 
-**[file]---
+** [file]---
 
 (S1 (S (NP (PRP I)) (VP (MD can) (RB n't) (VP (VB love) (NP (PRP you)))) (. .)))
 
